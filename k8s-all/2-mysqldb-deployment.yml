@@ -25,8 +25,8 @@ spec:
           env:
             - name: MYSQL_ROOT_PASSWORD
               value: shakil@123
-            - name: MYSQL_DATABASE
-              value: java_to_dev_app_db
+#            - name: MYSQL_DATABASE
+#              value: java_to_dev_app_db
 #            - name: MYSQL_USER
 #              value: root
           args:

@@ -17,7 +17,7 @@ spec:
       containers:
         - name: springboot-frontend
           image: shakilsaddam/springboot-mysql
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           ports:
             - name: http
               containerPort: 8080
