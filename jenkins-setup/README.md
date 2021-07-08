@@ -1,0 +1,1 @@
+### `jenkins-setup` directory contains the script to install all Jenkins Server dependencies during `vagrant` up command.
