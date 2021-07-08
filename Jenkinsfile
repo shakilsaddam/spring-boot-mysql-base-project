@@ -39,7 +39,7 @@ pipeline {
         }
       }
     }
-    
+    /*
     stage("Deploy App to K8S Cluster") {
       steps {
         script {
@@ -51,5 +51,6 @@ pipeline {
         }
       }
     }
+    */
   }
 }
