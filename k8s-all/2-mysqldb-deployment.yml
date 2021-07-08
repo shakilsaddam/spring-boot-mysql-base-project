@@ -24,11 +24,11 @@ spec:
           image: mysql:8.0
           env:
             - name: MYSQL_ROOT_PASSWORD
-              value: Timesheet@123
+              value: shakil@123
             - name: MYSQL_DATABASE
-              value: db_test
-            - name: MYSQL_USER
-              value: root
+              value: java_to_dev_app_db
+#            - name: MYSQL_USER
+#              value: root
           args:
             - --default-authentication-plugin=mysql_native_password
             - --character-set-server=utf8mb4

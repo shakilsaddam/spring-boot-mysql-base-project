@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage("Git Clone") {
         steps {
-            git branch: "main", url: "https://github.com/shakilsaddam/spring-boot-mysql-base-project.git"
+            git branch: "build-automation", url: "https://github.com/shakilsaddam/spring-boot-mysql-base-project.git"
         }
     }
 
@@ -23,7 +23,7 @@ pipeline {
     stage("Building/Dockerizing Image") {
       steps{
         script {
-          dockerImage = docker.build("${env.image_name}", "/vagrant/docker-all/")
+          dockerImage = docker.build("${env.image_name}", ".")
         }
       }
     }
