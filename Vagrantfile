@@ -8,8 +8,8 @@ Vagrant.configure(2) do |config|
     kubmaster.vm.box = "bento/ubuntu-20.04"
     kubmaster.vm.hostname = "kubmaster.example.com"
     kubmaster.vm.network "private_network", ip: "192.168.57.100"
-    kubmaster.vm.network "forwarded_port", guest: 30007, host: 30007
-    kubmaster.vm.network "forwarded_port", guest: 30008, host: 30008
+    kubmaster.vm.network "forwarded_port", guest: 30080, host: 30080
+    kubmaster.vm.network "forwarded_port", guest: 30081, host: 30081
     kubmaster.vm.provider "virtualbox" do |v|
       v.name = "kubmaster"
       v.memory = 2048
