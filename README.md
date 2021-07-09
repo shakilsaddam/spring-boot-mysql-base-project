@@ -32,6 +32,7 @@ Some additional plugins need to be installed and configured accordingly to succe
 
 I have faced some issues with the latest `Kubernetes Continuous Deployment Plugin`. It has to be downgraded to make it working. You can download the downgraded version from https://updates.jenkins.io/download/plugins/kubernetes-cd/1.0.0/kubernetes-cd.hpi and install it from `Manage Jenkins > Manage Plugins> Advanced Options> Upload Plugin`
 
+Also need to set some credentials such as **GitHub, Docker Hub, and KubeConfig** in the Jenkins Credentials option. Kubeconfig Credentials contain the config file of Kubernetes Master Node, which can be found in `~/.kube/config` in the kubmaster node. You can just do `cat ~/.kube/config` and paste the content to KubeConfi in Jenkins. 
 
 
 # Spring Boot MySQL Base Project
