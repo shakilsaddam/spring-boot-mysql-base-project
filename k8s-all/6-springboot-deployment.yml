@@ -22,14 +22,14 @@ spec:
             - name: http
               containerPort: 8080
           #MountPath is based on AnjayBRD project. It has to be changed in other applications.
-          volumeMounts:
-            - name: persistent-storage-springboot
-              mountPath: /User/File/TimeSheet/files/
+          #volumeMounts:
+          #  - name: persistent-storage-springboot
+          #    mountPath: /User/File/TimeSheet/files/
       
-      volumes:
-        - name: persistent-storage-springboot
-          persistentVolumeClaim:
-            claimName: springboot-pvc
+      #volumes:
+      #  - name: persistent-storage-springboot
+      #    persistentVolumeClaim:
+      #      claimName: springboot-pvc
 
 ---
 apiVersion: v1
